@@ -1,0 +1,69 @@
+package OrientaçaoObjeto;
+
+public class Exercicio5 {
+
+
+	//ATRIBUTOS
+		String cor;
+		String tamanho;
+		float price;
+
+
+		//METODO CONSTRUTOR
+
+
+		public Exercicio5 (String cor, String tamanho,float p)
+		{
+
+
+			this.cor = cor;
+			this.tamanho = tamanho;
+			this.price = p;
+
+
+		}
+		//METODO VOID ()
+		public void consultar()
+		{
+			System.out.println("\nCor do produto:"+ this.cor);
+			System.out.println("\nTamanho: "+ this.tamanho);
+			System.out.println("\nPreço: " + this.price);
+
+
+		}
+
+
+	}
+  ___________________________________________________________________________________________________________________________________________________________________________
+  
+  package ListaExercicios5;
+
+
+
+public class Patinete1 {
+
+
+
+
+
+	public static void main(String[] args) {
+
+
+
+
+		Patinete pt1 = new Patinete ("azul","Médio",(float) +350.00);
+
+
+		pt1.consultar();
+
+
+
+	}
+
+
+
+
+
+}
+
+
