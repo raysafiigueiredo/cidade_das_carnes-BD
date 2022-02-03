@@ -77,3 +77,30 @@ public class Exercicio1 {
 
 
 }
+
+
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+
+package OrientaçaoObjeto;
+
+public class Exercicio1 {
+
+
+public class Cliente1 {
+
+
+
+	public static void main(String[] args) {
+
+
+
+
+		Cliente c1 = new Cliente("José","000001", +200);
+
+
+		c1.cadastrar();
+
+
+	}
