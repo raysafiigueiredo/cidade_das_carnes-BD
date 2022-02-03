@@ -1,0 +1,55 @@
+# Orienta-ao-Objeto
+
+package OrientaçaoObjeto;
+
+public class Exercicio2 {
+	//ATRIBUTOS
+		String empresa;
+		String n_voo;
+		float valor_compra;
+		boolean decolagem;
+
+
+		//METODO CONSTRUTOR
+
+
+		public Exercicio2 (String empresa, String n_voo, float v)
+		{
+
+
+			this.empresa = empresa;
+			this.n_voo = n_voo;
+			this.valor_compra = v;
+
+
+		}
+		//METODO VOID ()
+
+
+		public void decolar()
+		{
+			this.decolagem=true;
+		}
+
+
+		public void subir()
+		{
+			this.decolagem=false;
+		}
+
+
+
+
+		public void embarcar()
+		{
+			System.out.println("\nCadastre o nome aqui: "+ this.empresa);
+			System.out.println("\nInsira o número do voô: "+this.n_voo);
+			System.out.println("\nInsira o valor da compra: "+this.valor_compra);
+			if(this.decolagem==false)
+
+
+				System.out.println("\nO avião ainda não partiu!");
+
+
+			else
+      
