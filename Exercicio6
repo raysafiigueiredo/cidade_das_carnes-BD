@@ -1,0 +1,62 @@
+package OrientaçaoObjeto;
+
+public class Exercicio6 {
+	//ATRIBUTOS
+			String nome_cliente;
+			String senha;
+			float saldo;
+
+
+			//METODO CONSTRUTOR
+
+
+			public Exercicio6 (String nome, String senha)
+			{
+
+
+				this.nome_cliente = nome;
+				this.senha = senha;
+
+
+			}
+			//METODO VOID ()
+			public void logar()
+			{
+				System.out.println("\nDigite seu nome:"+ this.nome_cliente);
+
+
+				if(this.senha.length()==6)
+				{ 
+					System.out.println("\n"+this.senha);
+
+
+
+
+					System.out.println("\nSaldo em conta: "+ this.saldo);}
+
+
+
+
+				else
+					System.out.println("\nInsira a senha correta! ");
+				}
+
+
+			}
+      _____________________________________________________________________________________________________________________________________________________________________
+      
+      public class ContaBancaria1 {
+
+
+	public static void main(String[] args) {
+		ContaBancaria conta1 = new ContaBancaria ("BRYAN","12345");
+
+
+		conta1.logar();
+
+
+	}
+
+
+}
+
