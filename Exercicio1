@@ -27,6 +27,8 @@ public class Exercicio1 {
     }
 
     // Classe Cliente1 (aqui pode ser removida se não for utilizada)
+--------------------------------------------------------------------------------------------
+//RESULTADO
     public static class Cliente1 {
         public static void main(String[] args) {
             Exercicio1 c1 = new Exercicio1("José", "000001", 200);
