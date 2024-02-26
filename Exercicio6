@@ -1,62 +1,41 @@
 package OrientaçaoObjeto;
 
 public class Exercicio6 {
-	//ATRIBUTOS
-			String nome_cliente;
-			String senha;
-			float saldo;
+    // Atributos da classe
+    String nome_cliente;
+    String senha;
+    float saldo;
 
+    // Método construtor
+    public Exercicio6(String nome, String senha) {
+        this.nome_cliente = nome;
+        this.senha = senha;
+        this.saldo = 0; // Inicializa o saldo como zero
+    }
 
-			//METODO CONSTRUTOR
+    // Método para fazer login
+    public void logar() {
+        System.out.println("\nDigite seu nome: " + this.nome_cliente);
 
-
-			public Exercicio6 (String nome, String senha)
-			{
-
-
-				this.nome_cliente = nome;
-				this.senha = senha;
-
-
-			}
-			//METODO VOID ()
-			public void logar()
-			{
-				System.out.println("\nDigite seu nome:"+ this.nome_cliente);
-
-
-				if(this.senha.length()==6)
-				{ 
-					System.out.println("\n"+this.senha);
-
-
-
-
-					System.out.println("\nSaldo em conta: "+ this.saldo);}
-
-
-
-
-				else
-					System.out.println("\nInsira a senha correta! ");
-				}
-
-
-			}
+        if (this.senha.length() == 6) {
+            System.out.println("\nSenha: " + this.senha);
+            System.out.println("\nSaldo em conta: " + this.saldo);
+        } else {
+            System.out.println("\nInsira a senha correta!");
+        }
+    }
+}
       _____________________________________________________________________________________________________________________________________________________________________
-      
-      public class ContaBancaria1 {
+      //RESULTADO
+      publpackage OrientaçaoObjeto;
 
+public class Main {
+    public static void main(String[] args) {
+        // Criando um objeto Exercicio6
+        Exercicio6 cliente = new Exercicio6("João", "123456");
 
-	public static void main(String[] args) {
-		ContaBancaria conta1 = new ContaBancaria ("BRYAN","12345");
-
-
-		conta1.logar();
-
-
-	}
-
-
+        // Chamando o método logar()
+        cliente.logar();
+    }
 }
 
