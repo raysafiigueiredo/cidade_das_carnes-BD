@@ -2,68 +2,37 @@ package OrientaçaoObjeto;
 
 public class Exercicio5 {
 
+    // Atributos da classe
+    String cor;
+    String tamanho;
+    float price;
 
-	//ATRIBUTOS
-		String cor;
-		String tamanho;
-		float price;
+    // Método construtor
+    public Exercicio5(String cor, String tamanho, float price) {
+        this.cor = cor;
+        this.tamanho = tamanho;
+        this.price = price;
+    }
 
-
-		//METODO CONSTRUTOR
-
-
-		public Exercicio5 (String cor, String tamanho,float p)
-		{
-
-
-			this.cor = cor;
-			this.tamanho = tamanho;
-			this.price = p;
-
-
-		}
-		//METODO VOID ()
-		public void consultar()
-		{
-			System.out.println("\nCor do produto:"+ this.cor);
-			System.out.println("\nTamanho: "+ this.tamanho);
-			System.out.println("\nPreço: " + this.price);
-
-
-		}
-
-
-	}
-  ___________________________________________________________________________________________________________________________________________________________________________
+    // Método para consultar
+    public void consultar() {
+        System.out.println("\nCor do produto: " + this.cor);
+        System.out.println("\nTamanho: " + this.tamanho);
+        System.out.println("\nPreço: " + this.price);
+    }
+}________________________________________________________________________________________________________________________________________________________________
   
   package ListaExercicios5;
 
+package OrientaçaoObjeto;
 
+public class Main {
+    public static void main(String[] args) {
+        // Criando um objeto Exercicio5
+        Exercicio5 produto = new Exercicio5("Azul", "Grande", 50.0f);
 
-public class Patinete1 {
-
-
-
-
-
-	public static void main(String[] args) {
-
-
-
-
-		Patinete pt1 = new Patinete ("azul","Médio",(float) +350.00);
-
-
-		pt1.consultar();
-
-
-
-	}
-
-
-
-
-
+        // Chamando o método consultar()
+        produto.consultar();
+    }
 }
-
 
